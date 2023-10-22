@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.ridenow" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>RideNow</name>
+    <description>Sample Apache Cordova App</description>
+    <author email="gokulakannanit@gmail.com" href="">
+        GB Companies
+    </author>
+
+    <content src="index.html" />
+    <access origin="*" />
+    <access launch-external="yes" origin="tel:*" />
+    <allow-navigation href="*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="data:*" />
+    <allow-intent href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <plugins>
+        <plugin name="InAppBrowser" value="CDVInAppBrowser" />
+    </plugins>
+    <platform name="android">
+        <icon density="ldpi" src="res/icon.png" background-color="#ffffff" />
+        <icon density="mdpi" src="res/icon.png" background-color="#ffffff" />
+        <icon density="hdpi" src="res/icon.png" background-color="#ffffff" />
+        <icon density="xhdpi" src="res/icon.png" background-color="#ffffff" />
+        <icon density="xxhdpi" src="res/icon.png" background-color="#ffffff" />
+        <icon density="xxxhdpi" src="res/icon.png" background-color="#ffffff" />
+
+
+        <preference name="SplashMaintainAspectRatio" value="true"/>
+        <preference name="SplashShowOnlyFirstTime" value="true"/>
+        <!--  Needed for Android 12  -->
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/splash-square.png"/>
+        <preference name="AndroidWindowSplashScreenBackground" value="#ffffff"/>
+        <!--  Portrait  -->
+        <splash density="port-ldpi" src="res/splash-square.png"/>
+        <splash density="port-mdpi" src="res/splash-square.png"/>
+        <splash density="port-hdpi" src="res/splash-square.png"/>
+        <splash density="port-xhdpi" src="res/splash-square.png"/>
+        <splash density="port-xxhdpi" src="res/splash-square.png"/>
+        <splash density="port-xxxhdpi" src="res/splash-square.png"/>
+    </platform>
+</widget>

@@ -1,0 +1,40 @@
+{
+  "name": "com.example.ridenow",
+  "displayName": "ridenow",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^12.0.1",
+    "cordova-browser": "^7.0.0",
+    "cordova-plugin-cleartext": "^1.0.0",
+    "cordova-plugin-file": "^8.0.0",
+    "cordova-plugin-file-transfer": "^2.0.0",
+    "cordova-plugin-inappbrowser": "^5.0.0",
+    "cordova-plugin-screen-orientation": "^3.0.3",
+    "es6-promise-plugin": "^4.2.2"
+  },
+  "cordova": {
+    "platforms": [
+      "android",
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-cleartext": {},
+      "cordova-plugin-file": {
+        "ANDROIDX_WEBKIT_VERSION": "1.4.0"
+      },
+      "cordova-plugin-file-transfer": {},
+      "cordova-plugin-screen-orientation": {}
+    }
+  }
+}
