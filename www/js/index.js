@@ -25,5 +25,4 @@ function onDeviceReady() {
     // Cordova is now initialized. Have fun!
     var ref = cordova.InAppBrowser.open(encodeURI('https://ride-now-15ad02292379.herokuapp.com?isApp=true&version=v2'), '_self', 'location=no');
 }
-window.screen.lockOrientationUniversal = window.screen.lockOrientation || window.screen.mozLockOrientation || window.screen.msLockOrientation
-window.screen.lockOrientationUniversal('portrait');
+window.screen.lock('portrait');
