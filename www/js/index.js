@@ -23,6 +23,8 @@ document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
-    var ref = cordova.InAppBrowser.open(encodeURI('https://ride-now-15ad02292379.herokuapp.com?isApp=true&version=v2'), '_self', 'location=no');
+    var ref = cordova.InAppBrowser.open(encodeURI('https://c-lab-1a713d0a6f9b.herokuapp.com?version=v5'), '_self', 'location=no');
+
+    window.screen.orientation.lock('portrait-primary');
+    ref.screen.orientation.lock('portrait-primary');
 }
-window.screen.lock('portrait');

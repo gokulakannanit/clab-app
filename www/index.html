@@ -55,11 +55,34 @@
         }
 
 
+        .scale_anim {
+            animation: crescendo 3s normal forwards ease-in-out;
+        }
+
+        @keyframes crescendo {
+            from {
+                opacity: 0;
+                transform: scale(0, 0);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.5, 1.5);
+            }
+            to {
+                transform: scale(1, 1);
+            }
+        }
+
+        .scale_anim_ {
+            opacity: 0.5;
+        }
+
+
     </style>
     </head>
     <body class="mat-typography no-ang">
         <div class="loading">
-            <div>
+            <div class="scale_anim_">
                 <img src="/img/logo.png" height="120px" />
             </div>
         </div>
